@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXCheckBox?>
+<?import com.jfoenix.controls.JFXDatePicker?>
+<?import com.jfoenix.controls.JFXTabPane?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Text?>
+
+<StackPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="746.0" prefWidth="1095.0" xmlns="http://javafx.com/javafx/8.0.65" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0">
+         <children>
+            <AnchorPane prefHeight="96.0" prefWidth="1098.0" style="-fx-background-color: #2981BD;" />
+            <JFXTabPane layoutY="48.0" prefHeight="700.0" prefWidth="1098.0">
+               <tabs>
+                  <Tab closable="false" style="-fx-background-color: #2981BD;" text="Reservation">
+                     <content>
+                        <AnchorPane prefHeight="607.0" prefWidth="1098.0">
+                           <children>
+                              <VBox layoutX="73.0" layoutY="44.0" prefHeight="50.0" prefWidth="678.0">
+                                 <children>
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 20;" text="Bienvenu à Oran Bus" textAlignment="CENTER" wrappingWidth="677.8072910308838">
+                                       <VBox.margin>
+                                          <Insets bottom="7.0" />
+                                       </VBox.margin>
+                                    </Text>
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 20;" text="Assurer son transport durant tout son séjur " textAlignment="CENTER" wrappingWidth="677.8072910308838" />
+                                 </children></VBox>
+                              <VBox layoutX="429.0" layoutY="158.0" prefHeight="102.0" prefWidth="271.0">
+                                 <children>
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 20;" text="Jusqu'a" wrappingWidth="73.80729103088379">
+                                       <VBox.margin>
+                                          <Insets bottom="7.0" />
+                                       </VBox.margin>
+                                    </Text>
+                                    <JFXDatePicker defaultColor="#2981bd" nodeOrientation="LEFT_TO_RIGHT" prefHeight="45.0" prefWidth="263.0" promptText="Date de fin de reservation" showTime="true" />
+                                 </children>
+                              </VBox>
+                              <VBox layoutX="73.0" layoutY="158.0" prefHeight="102.0" prefWidth="271.0">
+                                 <children>
+                                    <Text strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 20;" text="Pour " wrappingWidth="73.80729103088379">
+                                       <VBox.margin>
+                                          <Insets bottom="7.0" />
+                                       </VBox.margin>
+                                    </Text>
+                                    <JFXDatePicker defaultColor="#2981bd" prefHeight="45.0" prefWidth="263.0" promptText="Date de début de reservation" />
+                                 </children>
+                              </VBox>
+                              <Text layoutX="87.0" layoutY="303.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 20;" text="Tarif " wrappingWidth="60.98307228088379" />
+                              <HBox alignment="CENTER" layoutX="429.0" layoutY="310.0" prefHeight="50.0" prefWidth="350.0">
+                                 <children>
+                                    <JFXCheckBox checkedColor="BLACK" prefHeight="35.0" prefWidth="394.0" style="-fx-font-size: 20;" text="Bon de recharge" textAlignment="CENTER" unCheckedColor="#2981bd">
+                                       <HBox.margin>
+                                          <Insets right="150.0" />
+                                       </HBox.margin>
+                                    </JFXCheckBox>
+                                 </children>
+                              </HBox>
+                              <Text layoutX="170.0" layoutY="495.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 20;" text="Entrer le code de votre rechagement" wrappingWidth="521.9830722808838" />
+                              <JFXButton layoutX="779.0" layoutY="577.0" prefHeight="47.0" prefWidth="308.0" ripplerFill="WHITE" style="-fx-font-size: 20;" text="Accéder à la plateforme " />
+                              <JFXTextField layoutX="81.0" layoutY="341.0" maxWidth="231.0" minWidth="231.0" prefHeight="32.0" prefWidth="231.0" promptText="DZD" />
+                              <Text layoutX="435.0" layoutY="297.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 20;" text="Mode de payement" wrappingWidth="234.9830722808838" />
+                              <JFXCheckBox checkedColor="BLACK" layoutX="431.0" layoutY="368.0" prefHeight="35.0" prefWidth="394.0" style="-fx-font-size: 20;" text="Carte de recharge" textAlignment="CENTER" unCheckedColor="#2981bd" />
+                              <JFXTextField layoutX="173.0" layoutY="526.0" maxWidth="371.0" minWidth="231.0" prefHeight="32.0" prefWidth="371.0" promptText="Code" />
+                              <Text layoutX="794.0" layoutY="143.0" strokeType="OUTSIDE" strokeWidth="0.0" style="-fx-font-size: 20;" text="Récupérer votre code QR" wrappingWidth="270.9830722808838" />
+                              <Separator layoutX="748.0" layoutY="87.0" orientation="VERTICAL" prefHeight="483.0" prefWidth="30.0" />
+                              <ImageView fitHeight="191.0" fitWidth="229.0" layoutX="832.0" layoutY="185.0" pickOnBounds="true" preserveRatio="true">
+                                 <image>
+                                    <Image url="@../img/Qrcode_wikipedia_fr_v2clean.png" />
+                                 </image>
+                              </ImageView>
+                           </children>
+                        </AnchorPane>
+                     </content>
+                  </Tab>
+               </tabs>
+            </JFXTabPane>
+         </children>
+      </AnchorPane>
+      <AnchorPane prefHeight="200.0" prefWidth="200.0" />
+      <AnchorPane prefHeight="200.0" prefWidth="200.0">
+         <children>
+            <AnchorPane layoutX="129.0" layoutY="6.0" prefHeight="71.0" prefWidth="968.0" style="-fx-background-color: #2981BD;" />
+         </children>
+      </AnchorPane>
+   </children>
+</StackPane>

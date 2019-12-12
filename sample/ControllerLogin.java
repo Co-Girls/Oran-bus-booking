@@ -53,9 +53,17 @@ public class ControllerLogin {
                 if(val.equals(password.getText())){
                     System.out.println(" compte correcte");
                     UserDB.getConnection();
+                    Stage stage = new Stage();
+                    stage.close();
+                    Parent root = FXMLLoader.load(getClass().getResource("reservation.fxml"));
+                    Scene scene = new Scene(root);
+
+                    stage.setScene(scene);
+                    stage.setResizable(false);
+                    stage.show();
 
                 }else{
-                    System.out.println("faux compte");}
+                    System.out.println("faux compte ou password incoo");}
 
             }else{
                 System.out.println("faux compte");}

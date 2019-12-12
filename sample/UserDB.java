@@ -47,4 +47,24 @@ public class UserDB {
         return list;
     }
 
+
+    public static int insertUser(User user) throws SQLException, Exception{
+        int s =0;
+
+        try{
+
+            String sql =" INSERT INTO `users` (`username`, `password`) VALUES (?,?)";
+            Connection con =UserDB.getConnection();
+            PreparedStatement stm = (PreparedStatement)con.prepareStatement(sql);
+            stm.setString(1, user.getUsername());
+            stm.setString(2, user.getPassword());
+            s=stm.executeUpdate();
+
+            con.close();
+        }catch(SQLException e){
+            e.printStackTrace();
+        }
+        return s;
+    }
+
 }
