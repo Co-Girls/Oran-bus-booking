@@ -1,0 +1,45 @@
+
+.login-bg{
+    //en bas la couleur est violet proche rose et en haut la couleur est blue proche violet
+   /* -fx-background-color: linear-gradient(to top, blue, white);*/
+    -fx-background-color: linear-gradient(to bottom, #2981bd, #2981bd, #2981bd,
+     #2981bd, #2981bd, #3a88c1, #4990c5, #5697c9, #72a8d2, #8cb9db, #a6cae4, #c0dbee);
+}
+
+.signup-bg{
+      -fx-background-color: linear-gradient(to bottom, #c0dbee, #e1e1ea, #c0c5d6, #9eaac2, #7990ae, #6786a8, #537da3, #3c749d, #3877a5, #347bad, #2f7eb5, #2981bd);
+
+}
+
+.anchorpaneI{
+      -fx-background-color: #fff;
+      -fx-background-radius: 10px;
+}
+
+.btn-login{
+    -fx-background-color: #2981BD;
+    -fx-text-fill: #fff;
+    -fx-font-size: 15px;
+    -fx-font-weight: 700;
+    -fx-background-radius: 9px;
+}
+
+.switch{
+     -fx-text-fill: #2B516C;
+     -fx-font-size: 15px;
+     -fx-font-weight: bold;
+}
+
+
+
+.Signup-bg{
+     -fx-background-color: linear-gradient(to top, #0082bc,#01d8db);
+}
+
+.btn-Signup{
+    -fx-background-color: #9013fb;
+    -fx-text-fill: #fff;
+    -fx-font-size: 17px;
+    -fx-font-weight: 700;
+    -fx-background-radius: 9px;
+}

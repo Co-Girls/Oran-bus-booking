@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import com.jfoenix.controls.JFXButton?>
+<?import com.jfoenix.controls.JFXPasswordField?>
+<?import com.jfoenix.controls.JFXTextField?>
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIcon?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.effect.DropShadow?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="644.0" prefWidth="940.0" styleClass="login-bg" stylesheets="@style.css" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.ControllerLogin">
+   <children>
+      <AnchorPane fx:id="panephoto" layoutX="51.0" layoutY="148.0" style="-fx-background-radius: 10px;">
+         <children>
+            <ImageView fitHeight="349.0" fitWidth="458.0" pickOnBounds="true" preserveRatio="true">
+               <image>
+                  <Image url="@../img/logo.png" />
+               </image>
+            </ImageView>
+         </children>
+         <effect>
+            <DropShadow />
+         </effect>
+      </AnchorPane>
+      <AnchorPane layoutX="501.0" layoutY="54.0" prefHeight="538.0" prefWidth="394.0" styleClass="anchorpaneI">
+         <children>
+            <Label alignment="CENTER" layoutX="139.0" layoutY="77.0" prefHeight="59.0" prefWidth="115.0" text="LOGIN" textAlignment="CENTER" textFill="#2981bd">
+               <font>
+                  <Font name="System Bold Italic" size="28.0" />
+               </font></Label>
+            <JFXTextField fx:id="username" focusColor="#2981bd" labelFloat="true" layoutX="63.0" layoutY="176.0" maxWidth="288.0" minWidth="244.0" prefHeight="37.0" prefWidth="272.0" promptText="Email">
+               <font>
+                  <Font name="System Bold Italic" size="15.0" />
+               </font>
+            </JFXTextField>
+            <FontAwesomeIcon fill="#4d4d4d" iconName="ENVELOPE" layoutX="302.0" layoutY="201.0" text="" />
+            <FontAwesomeIcon fill="#4d4d4d" iconName="LOCK" layoutX="303.0" layoutY="297.0" size="1.3em" />
+            <JFXPasswordField fx:id="password" focusColor="#2981bd" labelFloat="true" layoutX="61.0" layoutY="272.0" maxWidth="288.0" minWidth="244.0" prefHeight="37.0" prefWidth="272.0" promptText="Password">
+               <font>
+                  <Font name="System Bold Italic" size="15.0" />
+               </font>
+            </JFXPasswordField>
+            <JFXButton layoutX="149.0" layoutY="369.0" onMouseClicked="#login" prefHeight="37.0" prefWidth="100.0" styleClass="btn-login" text="LOGIN" />
+            <Label alignment="CENTER" layoutX="87.0" layoutY="454.0" onMouseClicked="#signup" prefHeight="21.0" prefWidth="219.0" styleClass="switch" text="New Here ? Create Account" textAlignment="CENTER" textFill="#c3189d">
+               <font>
+                  <Font name="System Bold" size="15.0" />
+               </font>
+               <cursor>
+                  <Cursor fx:constant="HAND" />
+               </cursor>
+            </Label>
+            <Label layoutX="199.0" layoutY="96.0" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>
